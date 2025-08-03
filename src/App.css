@@ -1,0 +1,145 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: url('../public/bg.jpg');
+	background-size: cover;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.music-player-container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #fafafa;
+}
+
+.music-player-wrapper {
+	width: 100%;
+	max-width: 400px;
+	padding: 1.5rem;
+	background-size: cover;
+}
+
+.music-player-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid rgba(255, 255, 255, 0.35);
+	background: rgba(255, 255, 255, 0.01);
+	backdrop-filter: blur(2px);
+	padding: 2rem 1.5rem;
+	border-radius: 20px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.music-cover {
+	width: 160px;
+	height: 160px;
+	border-radius: 16px;
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+	object-fit: cover;
+	margin-bottom: 1rem;
+}
+
+.title-wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+
+.track-title {
+	font-size: 1.4rem;
+	font-weight: 600;
+	margin: 0.5rem 0;
+	white-space: nowrap;
+	animation: scroll-title 10s linear infinite;
+}
+
+@keyframes scroll-title {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+.track-artist {
+	font-size: 0.9rem;
+	color: #dddddd;
+	margin-bottom: 1rem;
+}
+
+.controls {
+	display: flex;
+	gap: 2rem;
+}
+
+.controls button {
+	display: flex;
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	padding: 0.75rem;
+	border-radius: 50%;
+	cursor: pointer;
+	backdrop-filter: blur(2px);
+}
+
+.controls button:hover {
+	background: rgba(255, 255, 255, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+/* Slider CSS */
+.timeline {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+.timeline p {
+	font-size: 12px;
+}
+
+.slider-wrapper {
+	width: 100%;
+	display: flex;
+}
+
+.slider {
+	cursor: pointer;
+	appearance: none;
+	height: 4px;
+	width: 100%;
+	border-radius: 50px;
+	transition: background 0.3s;
+}
+
+.slider::-webkit-slider-thumb {
+	appearance: none;
+	height: 20px;
+	width: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.35);
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(1px);
+	box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+	transition: all 0.2s ease-in-out;
+}
+
+.slider::-webkit-slider-thumb:hover {
+	height: 20px;
+	width: 32px;
+	border-radius: 6px;
+	background: rgba(255, 255, 255, 0.25);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
