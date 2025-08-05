@@ -28,7 +28,7 @@ A simple, modern **Music Player** built with **React** that plays your personal 
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/react-music-player.git
+git clone https://github.com/Khushichetule09/Music-Playlist-React
 cd react-music-player
 
 2. Install dependencies
