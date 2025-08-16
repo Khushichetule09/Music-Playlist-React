@@ -1,5 +1,11 @@
 const TRACKS = [
-	{
+    {
+		title: 'Sun Sathiya - (music with good vocals)',
+		artist: 'Sing By Khushi',
+		cover: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFy6MSCJHxtwt5pU_z57kbhuKrqzDLGtLPkg&s',
+		src: './songs/sun sathiya.mp3',
+	},
+    {
 		title: 'Rozana - (Emotional touch music)',
 		artist: 'Sing By Khushi',
 		cover: 'https://imgs.search.brave.com/oaQlPNBoLRHqt6l1ULGpSJEA34VYgUkf94wWx2-wXjo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/aGluZGl0cmFja3Mu/aW4vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTcvMDMvcm96YW5h/LmpwZw',
